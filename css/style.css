@@ -160,10 +160,13 @@ body {
 /* End Header */
 /* Start Landing Section */
 .landing {
-  background-image: url(/assets/img/landing.jpg);
-  background-size: cover;
-  height: calc(100vh - 64px);
+  
   position: relative;
+}
+.landing img {
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 64px);
 }
 .landing .intro-text {
   position: absolute;
@@ -217,7 +220,7 @@ body {
   font-size: 17px;
 }
 /* End Features Section */
-/* Start Services */
+/* Start Services  */
 .services {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
@@ -225,7 +228,7 @@ body {
 .services .services-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
+  grid-gap: 30px;
   margin-top: 100px;
 }
 .services .services-content .srv {
@@ -242,13 +245,13 @@ body {
   color: var(--main-color);
   flex-basis: 60px;
 }
-.services .services-content .srv text {
+.services .services-content .srv .text {
   flex: 1;
 }
-.services .services-content .srv text h3 {
+.services .services-content .srv .text h3 {
   margin: 0 0 20px;
 }
-.services .services-content .srv text p {
+.services .services-content .srv .text p {
   color: #444;
   font-weight: 300;
   line-height: 1.6;
@@ -260,11 +263,11 @@ body {
 .services .services-content .image::before {
   content: "";
   background-color: var(--secondry-color);
-  width: 80px;
+  width: 100px;
   height: calc(100% + 100px);
+  top: -50px;
   position: absolute;
   right: 0;
-  top: -50px;
   z-index: -1;
 }
 .services .services-content .image img {
@@ -275,7 +278,7 @@ body {
     display: none;
   }
 }
-/* End Services */
+/* Start Services  */
 /* Start Portfolio */
 .portfolio {
   padding-top: var(--section-padding);
